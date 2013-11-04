@@ -5,4 +5,4 @@
 <p><strong><a href="/tadpoles/<%= @tadpole.id %>/evolve">Evolve to frog</a></strong></p>
 <a href="/tadpoles">Back</a> | 
 <a href="/tadpoles/<%= @tadpole.id %>/edit">Edit</a> | 
-<a href="/tadpoles/<%= @tadpole.id %>/destroy">Delete</a>
+<%= link_to "Delete", @tadpole, method: :delete %>

@@ -12,4 +12,4 @@
 <p><strong><a href="/frogs/<%= @frog.id %>/tadpoles/new">Create new tadpole baby</a></strong></p>
 <a href="/frogs">Back</a> | 
 <a href="/frogs/<%= @frog.id %>/edit">Edit</a> | 
-<a href="/frogs/<%= @frog.id %>/destroy">Delete</a>
+<%= link_to "Delete", @frog, method: :delete %>

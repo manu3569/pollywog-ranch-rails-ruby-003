@@ -1,0 +1,8 @@
+<%= form_for(@frog) do |f| %>
+  <%= f.label :name %>
+  <%= f.text_field :name %>
+  <%= f.label :color %>
+  <%= f.text_field :color %>
+  <%= f.select :pond_id, @ponds.map {|p| [p.name, p.id]} %>
+  <%= f.submit %>
+<% end %>

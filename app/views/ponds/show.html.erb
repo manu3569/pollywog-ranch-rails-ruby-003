@@ -14,4 +14,4 @@
 </ol>
 <a href="/ponds">Back</a> | 
 <a href="/ponds/<%= @pond.id %>/edit">Edit</a> | 
-<a href="/ponds/<%= @pond.id %>/destroy">Delete</a>
+<%= link_to "Delete", @pond, method: :delete %>

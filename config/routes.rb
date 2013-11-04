@@ -1,4 +1,13 @@
 PollywogRanchRailsRuby003::Application.routes.draw do
+  resources :ponds
+  resources :frogs 
+  resources :tadpoles, except: :new do
+    member do
+      get 'evolve'
+    end
+  end
+  get 'frogs/:id/tadpoles/new' => 'tadpoles#new', as: :new_tadpole
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
