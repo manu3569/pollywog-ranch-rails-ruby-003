@@ -1,4 +1,7 @@
 PollywogRanchRailsRuby003::Application.routes.draw do
+
+  root 'ponds#index'
+
   resources :ponds
   resources :frogs 
   resources :tadpoles, except: :new do

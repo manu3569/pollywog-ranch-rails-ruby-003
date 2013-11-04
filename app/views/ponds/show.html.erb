@@ -12,6 +12,6 @@
     </li>
   <% end %>
 </ol>
-<a href="/ponds">Back</a> | 
-<a href="/ponds/<%= @pond.id %>/edit">Edit</a> | 
+<%= link_to "Back", ponds_path %> | 
+<%= link_to "Edit", edit_pond_path(@pond) %> | 
 <%= link_to "Delete", @pond, method: :delete %>
