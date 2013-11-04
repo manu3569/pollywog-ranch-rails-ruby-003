@@ -6,3 +6,6 @@
   <%= f.select :pond_id, @ponds.map {|p| [p.name, p.id]} %>
   <%= f.submit %>
 <% end %>
+
+<br>
+<%= link_to "Cancel", frogs_path %>
